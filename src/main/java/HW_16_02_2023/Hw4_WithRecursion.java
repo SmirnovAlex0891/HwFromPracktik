@@ -6,14 +6,14 @@
  * [ ][ ][ ][ ]
  * [ ][ ][ ][ ]
  * имеет N == 4 and H == 3 и вид    [ 1 ][ 2 ][ 3 ][ 4 ]
- *                                  [ 10][ 11][ 12][ 5 ]
- *                                  [ 9 ][ 8 ][ 7 ][ 6 ]
+ * [ 10][ 11][ 12][ 5 ]
+ * [ 9 ][ 8 ][ 7 ][ 6 ]
  */
 package HW_16_02_2023;
 
-public class Hw4 {
+public class Hw4_WithRecursion {
     public static void main(String[] args) {
-        twoDimensionalArray(10, 4);
+        twoDimensionalArray(5, 9);
     }
 
     public static void twoDimensionalArray(int n, int m) {
@@ -22,7 +22,7 @@ public class Hw4 {
         int y = 0;
         int i = 1;
         ext(n, m, arr, x, y, i);
-        for (int j = 0, k = 0; k < n;) {
+        for (int j = 0, k = 0; k < n; ) {
             System.out.printf("%-5d", arr[k][j]);
             j++;
             if (j == m) {
@@ -65,7 +65,7 @@ public class Hw4 {
         if (x == xStart - 1) {
             x++;
             y--;
-            while (y > yStart && x+1 != m) {
+            while (y > yStart && x + 1 != m) {
                 arr[y][x] = i;
                 y--;
                 i++;

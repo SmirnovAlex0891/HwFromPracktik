@@ -1,6 +1,8 @@
-// Дан массив чисел, в котором есть все числа от 0 до N . Все эти числа в
-// единственном экземпляре. Расположены в разнобой. Одно число в этом массиве
-// пропущено ( Например {1 0 2 8 6 5 4 7} - это 3 ) . Найти пропущенное число
+/**
+ * Дан массив чисел, в котором есть все числа от 0 до N . Все эти числа в
+ * единственном экземпляре. Расположены в разнобой. Одно число в этом массиве
+ * пропущено ( Например {1 0 2 8 6 5 4 7} - это 3 ) . Найти пропущенное число
+ */
 package HW_16_02_2023;
 
 import java.util.HashSet;
@@ -12,6 +14,7 @@ public class Hw2_WithSet {
         int[] arr = {6, 0, 2, 4, 3, 5, 8, 7};
         System.out.println("Missing element: " + findMissingNumber(arr));
     }
+
     public static int findMissingNumber(int[] arr) {
         Set<Integer> set = new HashSet<>();
         int res = -1;
@@ -23,7 +26,7 @@ public class Hw2_WithSet {
             int tmp = it.next();
             if (tmp - 1 == res) {
                 res = tmp;
-            }else {
+            } else {
                 return res + 1;
             }
         }
