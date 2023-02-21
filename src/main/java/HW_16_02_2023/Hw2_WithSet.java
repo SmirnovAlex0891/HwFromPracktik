@@ -8,26 +8,29 @@ package HW_16_02_2023;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Hw2_WithSet {
     public static void main(String[] args) {
-        int[] arr = {6, 0, 2, 4, 3, 5, 8, 7};
+        int[] arr = {-50, -45, -44, -49, -47, -46};
         System.out.println("Missing element: " + findMissingNumber(arr));
     }
 
     public static int findMissingNumber(int[] arr) {
-        Set<Integer> set = new HashSet<>();
-        int res = -1;
-        for (int i = 0; i < arr.length; i++) {
-            set.add(arr[i]);
+        Set<Integer> set = new TreeSet<>();
+        int prev = Integer.MIN_VALUE;
+        for (int j : arr) {
+            set.add(j);
         }
         Iterator<Integer> it = set.iterator();
         while (it.hasNext()) {
             int tmp = it.next();
-            if (tmp - 1 == res) {
-                res = tmp;
+            if (prev == Integer.MIN_VALUE) {
+                prev = tmp;
+            } else if (tmp - 1 == prev) {
+                prev = tmp;
             } else {
-                return res + 1;
+                return prev + 1;
             }
         }
         return -1;
