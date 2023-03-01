@@ -38,7 +38,9 @@ public class Hw1 {
                     square = 0;
                     if (isIsland(arr, i, j)) {
                         numberOfIslands++;
-                        if (square > biggestIsland) biggestIsland = square;
+                        if (biggestIsland < square) {
+                            biggestIsland = square;
+                        }
                     }
                 }
             }

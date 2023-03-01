@@ -3,9 +3,9 @@ package HW_23_02_2023;
 /**
  * Пирамида паскаля заполнялась по ф-ле
  * <p>
- *  k      n!
+ *  k      n!             6
  * C = ----------
- *  n   k!*(n-k)!
+ *  n   1!*(n-k)!       1*(2)
  */
 public class Hw2 {
     public static void main(String[] args) {
