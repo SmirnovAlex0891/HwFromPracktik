@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class Hw1 {
+public class HwOne {
     private static final List<String> pal = new ArrayList<>();
     private static final List<String> notPal = new ArrayList<>();
     private static final int numLet = 4;

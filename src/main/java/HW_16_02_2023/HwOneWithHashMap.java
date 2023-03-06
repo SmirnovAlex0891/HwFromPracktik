@@ -6,7 +6,7 @@ package HW_16_02_2023;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hw1_WithHashMap {
+public class HwOneWithHashMap {
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 3, 5, 8, 9, 2, 4, 6, 1, 6, 7, 8, 9, 9, 3, 7, 3, 2};
         System.out.println("Not a pair element: " + findNum(arr));

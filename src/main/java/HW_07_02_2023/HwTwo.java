@@ -1,7 +1,7 @@
 // найти минимальный и второй по минимальности
 package HW_07_02_2023;
 
-public class Hw2_07_02 {
+public class HwTwo {
     public static void main(String[] args) {
         int[] arr = {-2,0,7,1,3,-1,9,4,7,1,3};
         getMin(arr);

@@ -4,7 +4,7 @@ package HW_09_02_2023;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Hw2 {
+public class HwTwo {
     public static void main(String[] args) {
         int[] arr = {0, 1, 4, 9, 3, 13, 0, 5};
         int n = 14;

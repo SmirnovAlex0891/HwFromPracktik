@@ -7,7 +7,7 @@
 //** все пары чисел
 package HW_09_02_2023;
 
-public class Hw1_TwoDimensionalArrayTwoAsterisks {
+public class HwOneTwoDimensionalArrayTwoAsterisks {
     public static void main(String[] args) {
         int arr[] = {0, 1, 4, 4, 9, 9, 3, 13, 5, 5};
         int n = 14;

@@ -3,7 +3,7 @@ package HW_07_02_2023;
 
 import java.util.Arrays;
 
-public class Hw4_07_02 {
+public class HwFour {
     public static void main(String[] args) {
         int n = 15;
         fib(n);

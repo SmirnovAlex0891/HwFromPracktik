@@ -5,7 +5,7 @@ package HW_23_02_2023;
  * 2. Посчитать кол-во островов
  * 3. Вывести площадь самого большого острова
  */
-public class Hw1 {
+public class HwOne {
     static int square = 0;
     static int biggestIsland = 0;
 

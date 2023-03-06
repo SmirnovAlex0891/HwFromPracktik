@@ -5,7 +5,7 @@
 
 package HW_09_02_2023;
 
-public class Hw3 {
+public class HwThree {
     public static void main(String[] args) {
         int[] arr = {0, 1, 5, 4, 1, 9, 2, 10, 6};
         int n = 11;

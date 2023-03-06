@@ -2,7 +2,7 @@
 //**ДОБАВИТЬ ПРОВЕРКУ
 package HW_14_02_2023;
 
-public class HW_WithTwoDimensionalArray {
+public class HwWithTwoDimensionalArray {
     public static void main(String[] args) {
         String str = "AAASSDDFFRRTGGBNHYUUU";
         System.out.println(getNewString(str));

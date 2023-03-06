@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HW_WithStream {
+public class HwWithStream {
     public static void main(String[] args) {
         String str = "AAASSDDFFRRTGGBNHYUUU";
         System.out.println(getNewString(str));

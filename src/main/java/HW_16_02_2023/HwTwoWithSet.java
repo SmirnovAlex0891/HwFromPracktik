@@ -5,12 +5,11 @@
  */
 package HW_16_02_2023;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Hw2_WithSet {
+public class HwTwoWithSet {
     public static void main(String[] args) {
         int[] arr = {-50, -45, -44, -49, -47, -46};
         System.out.println("Missing element: " + findMissingNumber(arr));

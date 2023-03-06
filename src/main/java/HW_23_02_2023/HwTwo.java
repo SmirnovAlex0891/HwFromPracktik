@@ -7,7 +7,7 @@ package HW_23_02_2023;
  * C = ----------
  *  n   1!*(n-k)!       1*(2)
  */
-public class Hw2 {
+public class HwTwo {
     public static void main(String[] args) {
         int height = 15;
         pascalPyramid(height);

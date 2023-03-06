@@ -10,7 +10,7 @@ package HW_09_02_2023;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hw1_WithHashMapTwoAsterisks {
+public class HwOneWithHashMapTwoAsterisks {
     public static void main(String[] args) {
         int[] arr = {0, 1, 4, 4, 9, 9, 3, 13, 5, 5};
         int n = 14;

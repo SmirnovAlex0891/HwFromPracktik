@@ -11,7 +11,7 @@
  */
 package HW_16_02_2023;
 
-public class Hw4_WithRecursion {
+public class HwFourWithRecursion {
     public static void main(String[] args) {
         twoDimensionalArray(5, 9);
     }

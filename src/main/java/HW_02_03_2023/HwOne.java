@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Hw1 {
+public class HwOne {
     private static List<Integer> list = new ArrayList<>();
     private static final int numLet = 5;
 

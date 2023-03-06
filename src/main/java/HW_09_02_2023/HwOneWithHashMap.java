@@ -8,7 +8,7 @@ package HW_09_02_2023;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Hw1_WithHashMap {
+public class HwOneWithHashMap {
     public static void main(String[] args) {
         int arr[] = {0, 1, 3, 4, 8, 9, 12, 2, 6};
         int n = 13;

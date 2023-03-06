@@ -1,7 +1,7 @@
 // сумму элементов массива
 package HW_07_02_2023;
 
-public class Hw1_07_02 {
+public class HwOne {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
         System.out.println(sum(arr));

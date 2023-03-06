@@ -5,7 +5,7 @@
 //[0 1 5 4 8 9 3 2 6] n = 13
 package HW_09_02_2023;
 
-public class Hw1 {
+public class HwOne {
     public static void main(String[] args) {
         int arr[] = {0, 1, 3, 4, 8, 9, 12, 2, 6};
         int n = 13;

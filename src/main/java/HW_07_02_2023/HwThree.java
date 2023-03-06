@@ -3,7 +3,7 @@
 // * если меньше то сообщение что массив меньше
 package HW_07_02_2023;
 
-public class Hw3_07_02 {
+public class HwThree {
     public static void main(String[] args) {
         int[] arr = {1,-1,1,16,2,2,2,2,15,115};
         getMin(arr);

@@ -2,12 +2,10 @@
 //**ДОБАВИТЬ ПРОВЕРКУ
 package HW_14_02_2023;
 
-import java.text.CharacterIterator;
-import java.text.StringCharacterIterator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HW_WithCharacterIterator {
+public class HwWithFor {
     public static void main(String[] args) {
         String str = "AAASSDDFFRRTGGBNHYUUU";
         System.out.println(getNewString(str));
@@ -16,20 +14,18 @@ public class HW_WithCharacterIterator {
     public static String getNewString(String s) {
         Map<Character, Integer> map = new HashMap<>();
         StringBuilder sb = new StringBuilder();
-        CharacterIterator it = new StringCharacterIterator(s);
-
-        while (it.current() != CharacterIterator.DONE) {
-            if (it.current() >= 'A' && it.current() <= 'Z' || it.current() >= 'a' && it.current() <= 'z') {
-                if (map.containsKey(it.current())) {
-                    map.put(it.current(), map.get(it.current()) + 1);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z' || s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+                if (map.containsKey(s.charAt(i))) {
+                    map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
                 } else {
-                    map.put(it.current(), 1);
+                    map.put(s.charAt(i), 1);
                 }
             } else {
                 System.out.println("Only letters!");
                 return null;
             }
-            it.next();
+
         }
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             sb.append(entry.getValue()).append(entry.getKey());
