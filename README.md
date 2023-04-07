@@ -10,3 +10,4 @@
 - [Home Work 15.03.2023](https://github.com/SmirnovAlex0891/HwFromPracktik/tree/master/src/main/java/HW_15_03_2023)
 - [Home Work 16.03.2023](https://github.com/SmirnovAlex0891/HwFromPracktik/tree/master/src/main/java/HW_16_03_2023)
 - [Home Work 21.03.2023](https://github.com/SmirnovAlex0891/HwFromPracktik/tree/master/src/main/java/HW_21_03_2023)
+- [Home Work 30.03.2023](https://github.com/SmirnovAlex0891/HwFromPracktik/tree/master/src/main/java/HW_30_03_2023)
