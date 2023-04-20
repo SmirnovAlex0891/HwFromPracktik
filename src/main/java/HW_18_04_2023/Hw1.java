@@ -3,6 +3,7 @@ package HW_18_04_2023;
 import java.io.*;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,9 +32,9 @@ public class Hw1 {
             e.printStackTrace();
         }
         text = sb.toString();
-        text = text.toLowerCase().replaceAll("(\\.)|(,)|(X)|(I)|(V)|(\\[)|(\\])|(\\*)|(\\()|(\\))|(–)|(!)|(\\?)|(;)|(:)|(«)|(»)|(…)", "");
-
-        Map<String, Integer> map = Arrays.stream(text.split(" "))
+        //text = text.toLowerCase().replaceAll("(\\.)|(,)|(X)|(I)|(V)|(\\[)|(\\])|(\\*)|(\\()|(\\))|(–)|(!)|(\\?)|(;)|(:)|(«)|(»)|(…)", "");
+        List<String> words = Arrays.asList(text.split("\\P{L}+"));
+        Map<String, Integer> map = words.stream()
                 .collect(HashMap::new, (m, w) -> {
                     if (m.containsKey(w)) {
                         m.put(w, m.get(w) + 1);
