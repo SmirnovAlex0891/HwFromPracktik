@@ -2,7 +2,7 @@ package HW_16_03_2023;
 
 import java.util.Objects;
 
-public class Person implements Comparable<Person>{
+class Person implements Comparable<Person>{
     private String name;
     private String department;
     private int age;

@@ -23,7 +23,7 @@ public class Task7 {
                 .collect(ArrayList::new,
                         (l, el) -> {
                             if (l.isEmpty() || l.get(l.size() - 1).size() == size) {
-                                l.add(new ArrayList<Integer>(Collections.singletonList(el)));
+                                l.add(new ArrayList<>(Collections.singletonList(el)));
                             } else if (l.get(l.size() - 1).size() < size) {
                                 l.get(l.size() - 1).add(el);
                             }
