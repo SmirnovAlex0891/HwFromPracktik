@@ -18,10 +18,10 @@ public class Task1 {
 
         List<Person> list = new ArrayList<>(Arrays.asList(person1, person2, person3, person4, person5));
 
-        persorWithMaxFrieds(list);
+        personWithMaxFriends(list);
     }
 
-    private static void persorWithMaxFrieds(List<Person> list) {
+    private static void personWithMaxFriends(List<Person> list) {
         List<String> uniqFrends = list.stream()
                 .flatMap(p -> p.getFriends().stream())
                 .distinct()
