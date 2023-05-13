@@ -14,25 +14,12 @@ public class Hw1 {
         //System.out.println(editString(s, point));
 
     }
-    public static String editString(String s, int point) {
-        while (point < s.length()) {
-            if (!Character.isDigit(s.charAt(point))) {
-                res += s.charAt(point);
-                point++;
-            } else {
-                int temp = Integer.parseInt(String.valueOf(s.charAt(point)));
-                point++;
-                res += dop(s, point, temp);
-            }
+    public static String editString(String s) {
+        char[] tmp = s.toCharArray();
+        for (int i = 0; i < tmp.length; i++) {
 
         }
-        return res;
+        return "";  
     }
-    public static String dop(String s, int point, int value) {
-        String dopRes = "";
-        while (value > 0) {
-            dopRes += s.charAt(point);
-        }
-        return dopRes;
-    }
+
 }
